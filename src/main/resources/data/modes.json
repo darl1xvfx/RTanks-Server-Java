@@ -1,0 +1,16 @@
+{
+	"modes":[
+    {
+		"mode":"XP",
+		"name":"FORMAT_NAME_XP"
+	},
+	{
+		"mode":"XP/BP",
+		"name":"FORMAT_NAME_XPBR"
+	},
+	{
+		"mode":"BP",
+		"name":"FORMAT_NAME_BR"
+	}
+   ]
+}

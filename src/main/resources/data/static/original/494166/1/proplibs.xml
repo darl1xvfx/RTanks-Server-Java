@@ -1,0 +1,12 @@
+<proplibs>
+<library name='OuterWalls.tara' resource-id='c0395' version='1' />
+<library name='LandTiles.tara' resource-id='448bd' version='1' />
+<library name='Trees.tara' resource-id='ca12d' version='1' />
+<library name='Bush.tara' resource-id='4c96a' version='1' />
+<library name='WaffleFence.tara' resource-id='2ea7a' version='1' />
+<library name='NuBu9.tara' resource-id='ca6bd' version='1' />
+<library name='Stuffs.tara' resource-id='7d9ac' version='1' />
+<library name='Promotion.tara' resource-id='d9646' version='1' />
+<library name='DesertHouses.tara' resource-id='9b8af' version='1' />
+<library name='NuBu3.tara' resource-id='53267' version='1' />
+</proplibs>

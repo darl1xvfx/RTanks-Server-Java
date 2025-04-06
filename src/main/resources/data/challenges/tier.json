@@ -1,0 +1,34 @@
+{
+  "tiers": [
+    {
+      "freeItem": {
+        "preview": 40128,
+        "amount": 15000,
+        "name": "CRYSTALL",
+        "received": false
+      },
+      "battlePassItem": {
+        "preview": 40128,
+        "amount": 15000,
+        "name": "CRYSTALL",
+        "received": false
+      },
+      "stars": 10
+    },
+    {
+      "freeItem": {
+        "preview": 40972,
+        "amount": 10000,
+        "name": "CRYSTALL",
+        "received": false
+      },
+      "battlePassItem": {
+        "preview": 40972,
+        "amount": 15000,
+        "name": "CRYSTALL",
+        "received": false
+      },
+      "stars": 1930
+    }
+  ]
+}

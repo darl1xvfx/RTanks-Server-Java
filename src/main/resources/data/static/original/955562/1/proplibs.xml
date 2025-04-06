@@ -1,0 +1,17 @@
+<proplibs>
+<library name='BushWinter.tara' resource-id='3d1fc' version='1' />
+<library name='LandTilesWinter.tara' resource-id='b7dd0' version='1' />
+<library name='LandRocksWinter.tara' resource-id='af2e4' version='1' />
+<library name='OuterWallsWinter.tara' resource-id='92f92' version='1' />
+<library name='LandHillsWinter.tara' resource-id='3f510' version='1' />
+<library name='WaffleFenceWinter.tara' resource-id='746c3' version='1' />
+<library name='IndustrialElementsWinter.tara' resource-id='2dc92' version='1' />
+<library name='RoadblockWinter.tara' resource-id='ac890' version='1' />
+<library name='LandRiseWinter.tara' resource-id='6464c' version='1' />
+<library name='NuBu12Winter.tara' resource-id='56143' version='1' />
+<library name='StuffsWinter.tara' resource-id='55085' version='1' />
+<library name='DesertHousesWinter.tara' resource-id='bb73c' version='1' />
+<library name='CityBuildingsWinter.tara' resource-id='df9d5' version='1' />
+<library name='PromotionWinter.tara' resource-id='ce7cf' version='1' />
+<library name='NuBu9Winter.tara' resource-id='a19fd' version='1' />
+</proplibs>

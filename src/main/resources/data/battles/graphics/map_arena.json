@@ -1,0 +1,14 @@
+{
+	"angleX":-1,
+	"ssaoAlpha":1.4,
+	"angleZ":-0.5,
+	"fogNear":5000,
+	"fogFar":10000,
+	"ssaoRange":1200,
+	"ssaoRadius":400,
+	"fogAlpha":0.25,
+	"fogColor":14545407,
+	"lightColor":13090219,
+	"ssaoColor":2045258,
+	"shadowColor":5530735
+}

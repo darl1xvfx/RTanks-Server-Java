@@ -1,0 +1,22 @@
+{
+  "activationTimeMsec": 1000,
+  "maxDamage": 2400,
+  "resources": {
+    "redMineTexture": 143393,
+    "model3ds": 584417,
+    "enemyMineTexture": 220372,
+    "activateSound": 569142,
+    "idleExplosionTexture": 984560,
+    "deactivateSound": 259457,
+    "explosionSound": 463461,
+    "friendlyMineTexture": 884514,
+    "mainExplosionTexture": 721672,
+    "blueMineTexture": 792047
+  },
+  "nearVisibilityRadius": 5,
+  "impactForce": 2.35,
+  "minDistanceFromBase": 6,
+  "radius": 0.5,
+  "farVisibilityRadius": 15,
+  "minDamage": 1200
+}

@@ -1,0 +1,23 @@
+{
+	"impactSoundTimelabel":1000,
+	"meteorModel":8722,
+	"nuclearBangLight":87424,
+	"rotationSpeed":1.0,
+	"nuclearBangWave":87426,
+	"tailSmoke":87421,
+	"nuclearBangSmoke":87425,
+	"meteorSpeed":5.0,
+	"nuclearBangSound":8727,
+	"nuclearBangFlame":87423,
+	"meteorArrivingSound":8726,
+	"bigSplashRadius":0.5,
+	"smallSplashRadius":25.0,
+	"craterDecal":87427,
+	"meteorDistantSound":8725,
+	"tailFlame":87422,
+	"splashDamageMinPercent":1.0,
+	"preferredFallAngle":1.0,
+	"flameOffset":0.75,
+	"meteorFlyDistance":10.0,
+	"splashDamageImpact":1.5
+}

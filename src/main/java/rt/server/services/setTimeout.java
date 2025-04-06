@@ -1,0 +1,15 @@
+package rt.server.services;
+
+public class setTimeout {
+    public setTimeout(Runnable runnable, int delay) {
+        new Thread(() -> {
+            try {
+                Thread.sleep(delay);
+                runnable.run();
+            }
+            catch (Exception e){
+                System.err.println(e);
+            }
+        }).start();
+    }
+}

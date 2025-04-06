@@ -1,0 +1,8 @@
+<proplibs>
+<library name='OuterWalls.tara' resource-id='c0395' version='1' />
+<library name='LandTiles.tara' resource-id='448bd' version='1' />
+<library name='Defense.tara' resource-id='7573c' version='1' />
+<library name='Passage.tara' resource-id='8ddfe' version='1' />
+<library name='Promotion.tara' resource-id='d9646' version='1' />
+<library name='WaffleFence.tara' resource-id='2ea7a' version='1' />
+</proplibs>

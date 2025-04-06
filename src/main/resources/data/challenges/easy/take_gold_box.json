@@ -1,0 +1,8 @@
+{
+	"image":67240,
+	"level":"easy",
+	"prizes":["Кристаллы x 99999999"],
+	"target_progress":3,
+	"description":"Собери «Золотой ящик»",
+	"id":"take_gold_box"
+}

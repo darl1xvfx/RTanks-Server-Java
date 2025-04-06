@@ -1,0 +1,19 @@
+[
+     {
+          "code": "FTNK0000007YH85XPL29Q2RF6",
+          "types": [
+               {
+                    "type": "lootbox",
+                    "quantity": 1
+               },
+               {
+                    "type": "crystall",
+                    "quantity": 5500
+               },
+               {
+                    "type": "premium",
+                    "quantity": 3
+               }
+          ]
+     }
+]

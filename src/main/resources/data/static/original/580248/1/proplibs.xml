@@ -1,0 +1,7 @@
+<proplibs>
+	<library name='LandTiles' resource-id='271D1' version='1' />
+	<library name='OuterWalls' resource-id='EF511' version='1' />
+	<library name='IndustrialBridge' resource-id='DD9D1' version='1' />
+	<library name='WaffleFence' resource-id='7EFD2' version='1' />
+	<library name='Promotion' resource-id='B88CA' version='1' />
+</proplibs>

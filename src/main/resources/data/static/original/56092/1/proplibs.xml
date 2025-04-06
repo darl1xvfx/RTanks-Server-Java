@@ -1,0 +1,16 @@
+<proplibs>
+<library name='Bush.tara' resource-id='4c96a' version='1' />
+<library name='Cliffs.tara' resource-id='f3ba0' version='1' />
+<library name='ConcreteTiles.tara' resource-id='5198' version='1' />
+<library name='GrassTiles.tara' resource-id='9937b' version='1' />
+<library name='ConcreteWalls.tara' resource-id='79034' version='1' />
+<library name='SlopesRises.tara' resource-id='bf481' version='1' />
+<library name='SmallBridge.tara' resource-id='5c2c4' version='1' />
+<library name='CityBuilds.tara' resource-id='e5867' version='1' />
+<library name='NuBu9.tara' resource-id='ca6bd' version='1' />
+<library name='Promotion.tara' resource-id='d9646' version='1' />
+<library name='NuBu10.tara' resource-id='9df06' version='1' />
+<library name='NuBu8.tara' resource-id='b97a5' version='1' />
+<library name='BridgeParts.tara' resource-id='2bf93' version='1' />
+<library name='NuBu3.tara' resource-id='53267' version='1' />
+</proplibs>

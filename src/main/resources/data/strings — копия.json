@@ -1,0 +1,114 @@
+[
+    {
+		"key":"CRYSTALL",
+		"value": {
+		   "RU": "Кристаллы",	
+	       "EN": "Crystals"
+		}
+	},
+    {
+		"key":"PREMIUM",
+		"value": {
+		   "RU": "Премиум",	
+	       "EN": "Premium"
+		}
+	},
+    {
+		"key":"LOOTBOX",
+		"value": {
+		   "RU": "Контейнер",	
+	       "EN": "Container"
+		}
+	},
+	{
+		"key":"SUPERGOLD_1000_CRYSTALS",
+		"value": {
+		   "RU": "Игрок %USERNAME% взял 1000 кристаллов. Себе. Потому что смог.",	
+	       "EN": "Игрок %USERNAME% взял 1000 кристаллов. Себе. Потому что смог."
+		}
+	},
+	{
+		"key":"SUPERGOLD_DROPGOLD_X2",
+		"value": {
+		   "RU": "Игрок %USERNAME% взял 1000 кристаллов. DataBase Error <!=>do DROPGOLDx2 /hacked by %USERNAME%",	
+	       "EN": "Игрок %USERNAME% has just got 1000 crystals. DataBase Error <!=>do DROPGOLDx2 /hacked by %USERNAME%"
+		}
+	},
+	{
+		"key":"SUPERGOLD_5000_CRYSTALS",
+		"value": {
+		   "RU": "Игрок %USERNAME% ловит 5000 кристаллов. Не твои, вот ты и бесишься.",	
+	       "EN": "Игрок %USERNAME% ловит 5000 кристаллов. Не твои, вот ты и бесишься."
+		}
+	},
+	{
+		"key":"SUPERGOLD_10000_CRYSTALS",
+		"value": {
+		   "RU": "Откуда лишний ноль? Почему %USERNAME% получает 10 000 кристаллов???",	
+	       "EN": "Откуда лишний ноль? Почему %USERNAME% получает 10 000 кристаллов???"
+		}
+	},
+	{
+		"key":"SUPERGOLD_50000_CRYSTALS",
+		"value": {
+		   "RU": "Игрок %USERNAME% взял обычный золотой ящик. 50 раз. 50 000 кристаллов! ПЯТЬДЕСЯТ, КАРЛ!",	
+	       "EN": "Игрок %USERNAME% взял обычный золотой ящик. 50 раз. 50 000 кристаллов! ПЯТЬДЕСЯТ, КАРЛ!"
+		}
+	},
+	{
+		"key":"SUPERGOLD_FULL_INVENTORY",
+		"value": {
+		   "RU": "%USERNAME%, тащи! Полная люстра на 5 минут. «Кто не спрятался — я не виноват!»",	
+	       "EN": "%USERNAME%, show them what you are made of! All supplies activated for 5 minutes!"
+		}
+	},
+	{
+		"key":"SUPERGOLD_GODMODE_ON",
+		"value": {
+		   "RU": "Минута бессмертия! %USERNAME% получает доспехи Godmode_ON. Бегите, глупцы!",	
+	       "EN": "A minute of immortality for %USERNAME%! This is what it feels like to be Godmode_ON."
+		}
+	},
+	{
+		"key":"SUPERGOLD_PREMIUM_1_DAY",
+		"value": {
+		   "RU": "%USERNAME% получил премиум-аккаунт на 86400 секунд и ушёл считать сколько это в днях.",	
+	       "EN": "%USERNAME% has received 86400 seconds of Premium and needs to pull out a calculator to figure out how many days that is."
+		}
+	},
+	{
+		"key":"SUPERGOLD_PREMIUM_2_DAY",
+		"value": {
+		   "RU": "Астрологи объявили неделю Премиума. Только для %USERNAME%. Только на 2 дня. Только не астрологи.",	
+	       "EN": "That's 48 hours of Premium for %USERNAME%. Bring out the coffee and snacks!"
+		}
+	},
+	{
+		"key":"SUPERGOLD_PREMIUM_3_DAY",
+		"value": {
+		   "RU": "Сон — для слабаков! %USERNAME% получает 3 дня премиум-аккаунта.",	
+	       "EN": "Сон — для слабаков! %USERNAME% получает 3 дня премиум-аккаунта."
+		}
+	},
+	{
+		"key":"SUPERGOLD_MONSTER_KILL",
+		"value": {
+		   "RU": "M-M-M-M-MONSTER KILL в исполнении %USERNAME%.",	
+	       "EN": "M-M-M-M-MONSTER KILL by %USERNAME%!"
+		}
+	},
+	{
+		"key":"SUPERGOLD_CAUGHT",
+		"value": {
+		   "RU": "взял суперголд",	
+	       "EN": "has caught the Super Gold"
+		}
+	},	
+	{
+		"key":"BAN",
+		"value": {
+		   "RU": "%REASON%\nЕсли вы уверены, что мы ошиблись - пишите на therealpaceq@gmail.com",	
+	       "EN": "%REASON%\nIf you are sure that we made a mistake - write to therealpaceq@gmail.com"
+		}
+	}	
+]

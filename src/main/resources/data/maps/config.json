@@ -1,0 +1,32 @@
+{
+	"maps": [
+		{
+			"name": "Песочница",
+			"id": "map_sandbox",
+			"min_rank": "1",
+			"max_rank": "30",
+			"max_players": "8",
+			"tdm": true,
+			"ctf": true,
+            "dom": true,
+			"skybox_id": "skybox2",
+			"preview_id":"318209",
+			"theme_id": "Лето",
+			"map_resource":"378527"
+		},
+		{
+			"name": "Арена",
+            "id": "map_arena",
+            "min_rank": "5",
+            "max_rank": "30",
+            "max_players": "8",
+            "tdm": true,
+            "ctf": false,
+			"dom": true,
+            "skybox_id": "skybox2",
+			"preview_id":"443769",
+            "theme_id": "Лето",
+			"map_resource":"894795"
+        }
+	]
+}

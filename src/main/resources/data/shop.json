@@ -1,0 +1,62 @@
+{
+  "data": {
+    "categories": [
+      {
+        "category_id": "specials",
+        "description": {
+          "RU": "Здесь вы можете найти уникальные или временные предложения товаров по выгодной цене. Действие карты «Двойной кристалл» не распространяется на эту категорию.",
+          "EN": "Here you can find unique or limited-time product offers at competitive prices. The effect of the Double Crystal card does not apply to this category."
+        },
+        "header_text": {
+          "RU": "Специальное предложение",
+          "EN": "Special offer"
+        }
+      },
+      {
+        "category_id": "crystals",
+        "description": {
+          "RU": "Здесь вы можете купить кристаллы, чтобы использовать их для приобретения нужных вам вещей в гараже",
+          "EN": "This is where you can buy Crystals. They are to buy equipment in your garage."
+        },
+        "header_text": {
+          "RU": "Кристаллы",
+          "EN": "Crystals"
+        }
+      },
+      {
+        "category_id": "lootboxes",
+        "description": {
+          "RU": "Контейнеры содержат в себе один из следующих предметов - кристаллы, припасы, дни премиум аккаунта, обычные и редкие краски. После покупки контейнеры появляются у вас в гараже в разделе «Особое» где их можно открыть. Контейнеры могут быть получены бесплатно в игре.",
+          "EN": "Containers contain one of the following items - crystals, supplies, premium account days, common and rare paints. After purchasing, containers appear in your garage in the “Special” section where you can open them. Containers can be obtained for free in the game."
+        },
+        "header_text": {
+          "RU": "Контейнеры",
+          "EN": "LootBoxes"
+        }
+      },
+      {
+        "category_id": "premium",
+        "description": {
+          "RU": "Приобретая премиум аккаунт, вы получаете целый ряд преимуществ - на 100 % больше кристаллов и на 50 % больше опыта за каждый бой, уникальную премиум краску. Уникальная краска не даёт дополнительную защиту танку.",
+          "EN": "Purchase a Premium Account to unlock a whole range of advantages. With Premium, every battle will bring you double the crystals and 50% more experience points. You'll also receive a unique Premium paint! Note: The unique paint does not provide additional protection to the tank."
+        },
+        "header_text": {
+          "RU": "Премиум аккаунт",
+          "EN": "Premium Account"
+        }
+      },
+      {
+        "category_id": "other",
+        "description": {
+          "RU": "Прочие товары",
+          "EN": "Other goods"
+        },
+        "header_text": {
+          "RU": "Другое",
+          "EN": "Other"
+        }
+      }
+    ]
+  },
+  "have_double_crystals": false
+}

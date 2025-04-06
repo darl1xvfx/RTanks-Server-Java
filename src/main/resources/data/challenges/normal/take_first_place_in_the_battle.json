@@ -1,0 +1,8 @@
+{
+	"image":67240,
+	"level":"normal",
+	"prizes":["Кристаллы x 99999999"],
+	"target_progress":3,
+	"description":"Займи первое место в битве",
+	"id":"take_first_place_in_the_battle"
+}

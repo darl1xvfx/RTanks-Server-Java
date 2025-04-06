@@ -1,0 +1,8 @@
+{
+	"image":67240,
+	"level":"easy",
+	"prizes":["Кристаллы x 99999999"],
+	"target_progress":3,
+	"description":"Собери «Двойная энергия»",
+	"id":"take_double_damage_box"
+}

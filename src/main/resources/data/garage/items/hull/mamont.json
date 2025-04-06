@@ -1,0 +1,66 @@
+{
+  "m0": {
+    "object3ds": 7860,
+    "physics": {
+      "speed": 4.4,
+      "turnSpeed": 0.9424778,
+      "acceleration": 8.9,
+      "reverseAcceleration": 8.9,
+      "sideAcceleration": 18.81,
+      "turnAcceleration": 1.4210471,
+      "reverseTurnAcceleration": 2.9503045,
+      "damping": 2000,
+      "mass": 4262,
+      "power": 8.9,
+      "hp": 2000
+    }
+  },
+  "m1": {
+    "object3ds": 98041,
+    "physics": {
+      "speed": 4.6,
+      "turnSpeed": 1.118756,
+      "acceleration": 10.11,
+      "reverseAcceleration": 10.11,
+      "sideAcceleration": 21.22,
+      "turnAcceleration": 1.5472344,
+      "reverseTurnAcceleration": 3.1604424,
+      "damping": 2000,
+      "mass": 4743,
+      "power": 10.11,
+      "hp": 2353
+    }
+  },
+  "m2": {
+    "object3ds": 22862,
+    "physics": {
+      "speed": 4.9,
+      "turnSpeed": 1.2950343,
+      "acceleration": 11.31,
+      "reverseAcceleration": 11.31,
+      "sideAcceleration": 23.62,
+      "turnAcceleration": 1.6732472,
+      "reverseTurnAcceleration": 3.3705797,
+      "damping": 2000,
+      "mass": 5225,
+      "power": 11.31,
+      "hp": 3117
+    }
+  },
+  "m3": {
+    "object3ds": 280426,
+    "physics": {
+      "speed": 5,
+      "turnSpeed": 1.3962634,
+      "acceleration": 12,
+      "reverseAcceleration": 12,
+      "sideAcceleration": 25,
+      "turnAcceleration": 1.7453293,
+      "reverseTurnAcceleration": 3.4906585,
+      "damping": 2000,
+      "mass": 5500,
+      "power": 12,
+      "hp": 3529
+    }
+  }
+}

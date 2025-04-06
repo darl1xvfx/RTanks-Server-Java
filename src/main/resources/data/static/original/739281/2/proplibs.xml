@@ -1,0 +1,14 @@
+<proplibs>
+<library name='GrassTilesWinter.tara' resource-id='d8dde' version='1' />
+<library name='ConcreteTilesWinter.tara' resource-id='eeaee' version='1' />
+<library name='CliffsWinter.tara' resource-id='70e6c' version='1' />
+<library name='BushWinter.tara' resource-id='3d1fc' version='1' />
+<library name='SlopesRisesWinter.tara' resource-id='c1333' version='1' />
+<library name='RoadblockWinter.tara' resource-id='ac890' version='1' />
+<library name='IndustrialElementsWinter.tara' resource-id='2dc92' version='1' />
+<library name='StuffsWinter.tara' resource-id='55085' version='1' />
+<library name='VillageBuildsWinter.tara' resource-id='56ed1' version='1' />
+<library name='ConcreteWallsWinter.tara' resource-id='d75ed' version='1' />
+<library name='PromotionWinter.tara' resource-id='ce7cf' version='1' />
+<library name='CityBuildsWinter.tara' resource-id='767e9' version='1' />
+</proplibs>

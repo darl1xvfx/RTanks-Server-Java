@@ -1,0 +1,8 @@
+{
+	"image":67240,
+	"level":"easy",
+	"prizes":["Кристаллы x 99999999"],
+	"target_progress":3,
+	"description":"Собери ящик «Ремкомплект»",
+	"id":"take_repair_kit_box"
+}

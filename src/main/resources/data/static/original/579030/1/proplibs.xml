@@ -1,0 +1,9 @@
+<proplibs>
+<library name='Terrain.tara' resource-id='6d16a' version='1' />
+<library name='ComBuild.tara' resource-id='8cb73' version='1' />
+<library name='Defense.tara' resource-id='7573c' version='1' />
+<library name='Passage.tara' resource-id='8ddfe' version='1' />
+<library name='Fence.tara' resource-id='7bcac' version='1' />
+<library name='Bush.tara' resource-id='4c96a' version='1' />
+<library name='Exterior.tara' resource-id='d9b87' version='1' />
+</proplibs>

@@ -1,0 +1,13 @@
+<proplibs>
+<library name='OuterWalls.tara' resource-id='c0395' version='1' />
+<library name='LandTiles.tara' resource-id='448bd' version='1' />
+<library name='IndustrialBridge.tara' resource-id='a4c9f' version='1' />
+<library name='WaffleFence.tara' resource-id='2ea7a' version='1' />
+<library name='CityBuildings.tara' resource-id='126e2' version='1' />
+<library name='Hangars.tara' resource-id='ac2d9' version='1' />
+<library name='Stuffs.tara' resource-id='7d9ac' version='1' />
+<library name='BrokenWalls.tara' resource-id='11cee' version='1' />
+<library name='IndustrialElements.tara' resource-id='f5f8' version='1' />
+<library name='DesertHouses.tara' resource-id='9b8af' version='1' />
+<library name='Promotion.tara' resource-id='d9646' version='1' />
+</proplibs>

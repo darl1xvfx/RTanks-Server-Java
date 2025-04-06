@@ -1,0 +1,6 @@
+<proplibs>
+<library name='ConcreteTiles.tara' resource-id='5198' version='1' />
+<library name='SlopesRises.tara' resource-id='bf481' version='1' />
+<library name='ConcreteWalls.tara' resource-id='79034' version='1' />
+<library name='Promotion.tara' resource-id='d9646' version='1' />
+</proplibs>

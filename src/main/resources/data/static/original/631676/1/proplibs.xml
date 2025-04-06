@@ -1,0 +1,7 @@
+<proplibs>
+<library name='BushWinter.tara' resource-id='3d1fc' version='1' />
+<library name='LandTilesWinter.tara' resource-id='b7dd0' version='1' />
+<library name='LandRocksWinter.tara' resource-id='af2e4' version='1' />
+<library name='WaffleFenceWinter.tara' resource-id='746c3' version='1' />
+<library name='PromotionWinter.tara' resource-id='ce7cf' version='1' />
+</proplibs>

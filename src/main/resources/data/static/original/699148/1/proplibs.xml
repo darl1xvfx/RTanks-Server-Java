@@ -1,0 +1,8 @@
+<proplibs>
+<library name='ConcreteTilesWinter.tara' resource-id='eeaee' version='1' />
+<library name='SlopesRisesWinter.tara' resource-id='c1333' version='1' />
+<library name='RoadblockWinter.tara' resource-id='ac890' version='1' />
+<library name='BridgePartsWinter.tara' resource-id='99a59' version='1' />
+<library name='PromotionWinter.tara' resource-id='ce7cf' version='1' />
+<library name='SmallBridgeWinter.tara' resource-id='81e7f' version='1' />
+</proplibs>

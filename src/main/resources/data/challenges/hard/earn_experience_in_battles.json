@@ -1,0 +1,8 @@
+{
+	"image":67240,
+	"level":"hard",
+	"prizes":["Кристаллы x 99999999"],
+	"target_progress":3,
+	"description":"Заработай опыт в битвах",
+	"id":"earn_experience_in_battles"
+}

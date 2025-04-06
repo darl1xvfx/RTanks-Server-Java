@@ -1,0 +1,8 @@
+{
+	"image":67240,
+	"level":"normal",
+	"prizes":["Кристаллы x 99999999"],
+	"target_progress":3,
+	"description":"Уничтожь противников в режиме DM",
+	"id":"destroy_your_opponents_dm"
+}
