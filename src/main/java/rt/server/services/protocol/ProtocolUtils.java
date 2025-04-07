@@ -23,7 +23,7 @@ public class ProtocolUtils {
                     w[i] -= key + k;
                 }
                 String decrypted = new String(w).trim();
-                //Logger.log(Logger.INFO, "ProtocolUtils.decrypt - Decrypted data: " + decrypted);
+                Logger.log(Logger.INFO, "ProtocolUtils.decrypt - Decrypted data: " + decrypted);
                 return decrypted;
             }
             return "";

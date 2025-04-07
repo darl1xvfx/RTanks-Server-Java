@@ -113,7 +113,6 @@ public class User {
 		this.incomingFriends = new ArrayList<>();
 	}
 
-	// Методы для работы с друзьями
 	public void addFriend(String friendUsername) {
 		Friend friend = new Friend(friendUsername, this.id);
 		friends.add(friend);
@@ -261,5 +260,32 @@ public class User {
 
 	public long getId() {
 		return id;
+	}
+
+	public boolean changePassword(String oldPassword, String newPassword) {
+		try {
+			if (!this.password.equals(oldPassword)) {
+				return false;
+			}
+
+			if (!validatePassword(newPassword)) {
+				return false;
+			}
+
+			this.password = newPassword;
+			Repositories.userRepository.updateUser(this);
+			return true;
+		} catch (Exception e) {
+			System.out.println("Error changing password for user " + this.username + ": " + e.getMessage());
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	private boolean validatePassword(String password) {
+		if (password == null || password.length() < 4) {
+			return false;
+		}
+		return true;
 	}
 }

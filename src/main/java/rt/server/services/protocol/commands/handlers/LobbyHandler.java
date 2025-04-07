@@ -54,6 +54,27 @@ public class LobbyHandler implements CommandHandler {
 
 			return;
 		}
+		if (command.equals(Commands.ChangePassword.command)) {
+			String oldPassword = args[0];
+			String newPassword = args[1];
+
+			try {
+				boolean success = client.user.changePassword(oldPassword, newPassword);
+
+				if (success) {
+					new Command(Commands.ShowAlert, "Пароль успешно изменён").send(client);
+				} else {
+					String errorMessage = client.user.password.equals(oldPassword)
+							? "Новый пароль должен содержать минимум 4 символов"
+							: "Неверный старый пароль";
+					new Command(Commands.ShowAlert, errorMessage).send(client);
+				}
+			} catch (Exception e) {
+				new Command(Commands.ShowAlert, "Ошибка сервера при смене пароля").send(client);
+				e.printStackTrace();
+			}
+			return;
+		}
 		if (command.equals(Commands.GetDataInitBattleSelect.command))
 		{
 			client.initBattleSelect();
