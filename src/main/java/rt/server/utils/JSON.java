@@ -310,17 +310,24 @@ public class JSON {
 				resistancess.add(parseProperty(propert));
 			}
 		}
+		if (user.client.user.equipment.mountedResistances.isEmpty()) {
+			System.out.println("No resistances found for user: " + user.client.user.username);
+		}
 		resistances.put("resistances", resistancess);
 		models.add(resistances);
 
 		if (user.tank.weapon.getModel() != null) {
 			Model weaponModel = user.tank.weapon.getModel();
 			JSONObject weaponJson = parseModel(weaponModel.high, weaponModel.low, weaponModel.name);
+
 			if (weaponModel.name.equals("laser")) {
 				weaponJson.put("showTime", 500);
 				weaponJson.put("colorRed", "16711684");
 				weaponJson.put("colorBlue", "30719");
 				weaponJson.put("locallyVisible", true);
+			} else if (weaponModel.name.equals("shotgunAiming")) {
+				weaponJson.put("scatterAngle", 15.0);
+				weaponJson.put("aimingTime", 1000);
 			}
 			models.add(weaponJson);
 		}
