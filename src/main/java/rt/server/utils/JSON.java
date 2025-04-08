@@ -13,6 +13,7 @@ import org.json.simple.parser.ParseException;
 
 import rt.server.garage.mountable.HullItemsDataParser;
 import rt.server.logger.Logger;
+import rt.server.platform.Model;
 import rt.server.services.FastHashMap;
 import rt.server.services.OnlineService;
 import rt.server.ServerProperties;
@@ -311,8 +312,17 @@ public class JSON {
 		}
 		resistances.put("resistances", resistancess);
 		models.add(resistances);
+
 		if (user.tank.weapon.getModel() != null) {
-			models.add(parseModel(user.tank.weapon.getModel().high, user.tank.weapon.getModel().low, user.tank.weapon.getModel().name));
+			Model weaponModel = user.tank.weapon.getModel();
+			JSONObject weaponJson = parseModel(weaponModel.high, weaponModel.low, weaponModel.name);
+			if (weaponModel.name.equals("laser")) {
+				weaponJson.put("showTime", 500);
+				weaponJson.put("colorRed", "16711684");
+				weaponJson.put("colorBlue", "30719");
+				weaponJson.put("locallyVisible", true);
+			}
+			models.add(weaponJson);
 		}
 
 		obj.put("sideAcceleration", user.tank.hull.sideAcceleration);
@@ -343,10 +353,7 @@ public class JSON {
 		obj.put("maxSpeed", user.tank.hull.speed);
 		obj.put("damping", user.tank.hull.damping);
 		obj.put("turret_resource", MountableItemsDataParser.get(user.client.user.equipment.turretId).object3ds);
-		String hullId = user.client.user.equipment.hullId;
-		HullItemsDataParser.HullItemData hullData = HullItemsDataParser.get(hullId);
-		int hullObject3ds = (hullData != null) ? hullData.object3ds : MountableItemsDataParser.get(hullId).object3ds;
-		obj.put("hull_resource", hullObject3ds);
+		obj.put("hull_resource", HullItemsDataParser.get(user.client.user.equipment.hullId).object3ds);
 		obj.put("deceleration", user.tank.hull.acceleration);
 		obj.put("colormap_resource", MountableItemsDataParser.get(user.client.user.equipment.colormapId).object3ds);
 		obj.put("sfxData", user.tank.weapon.getSFX(0).toJSONString());

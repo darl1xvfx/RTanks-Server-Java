@@ -4,7 +4,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import rt.server.battles.BattleModel;
-import rt.server.battles.weapons.twins.TwinsWeaponModel;
+import rt.server.battles.weapons.WeaponHandler;
+import rt.server.battles.weapons.laser.Laser;
 import rt.server.client.ClientEntity;
 import rt.server.math.Vector3;
 import rt.server.services.protocol.commands.Command;
@@ -37,6 +38,16 @@ public class BattleHandler implements CommandHandler {
 			battle.battleChatModel.onData(client.controller, args[0], Boolean.valueOf(args[1]));
 			return;
 		};
+		if (command.equals(Commands.UpdateDirection.command)) {
+			BattleModel battle = client.controller.battle;
+			battle.send2Battle(new Command(Commands.UpdateDirection, client.controller.tank.id, args[0]));
+			return;
+		}
+		if (command.equals(Commands.HideLaser.command)) {
+			BattleModel battle = client.controller.battle;
+			battle.send2Battle(new Command(Commands.HideLaser, client.user.username));
+			return;
+		}
 		if (command.equals(Commands.RotateTurret.command))
 		{
 			if (client.controller.tank.state.equals("suicide")) {
@@ -95,11 +106,14 @@ public class BattleHandler implements CommandHandler {
 			client.controller.battle.onFire(client.controller, args[0]);
 			return;
 		};
-		if (command.equals(Commands.StartFire.command))
-		{
-            client.controller.tank.weapon.startFire(client.controller, args[0]);
-            return;
-		};
+		if (command.equals(Commands.StartFire.command)) {
+			WeaponHandler weapon = client.controller.tank.weapon;
+			if (weapon.getModel() instanceof Laser) {
+				System.out.println("StartFire triggered with Laser model for tank: " + client.controller.tank);
+			}
+			weapon.startFire(client.controller, args[0]);
+			return;
+		}
 		if (command.equals(Commands.StopFire.command))
 		{
 			client.controller.tank.weapon.stopFire(client.controller);

@@ -4,6 +4,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import rt.server.battles.BattleController;
 import rt.server.battles.weapons.WeaponHandler;
+import rt.server.battles.weapons.laser.Laser;
 import rt.server.platform.Model;
 import rt.server.services.protocol.commands.Command;
 import rt.server.services.protocol.commands.Commands;
@@ -34,8 +35,7 @@ public class RocketLauncherWeaponModel implements WeaponHandler {
 
 	@Override
 	public Model getModel() {
-		// TODO Auto-generated method stub
-		return null;
+		return new Laser();
 	}
 
 	@Override
@@ -47,7 +47,6 @@ public class RocketLauncherWeaponModel implements WeaponHandler {
 	@Override
 	public void startFire(BattleController battle, String data) {
 		battle.battle.send2Battle(new Command(Commands.StartFire, battle.client.user.username));
-
 	}
 
 }
