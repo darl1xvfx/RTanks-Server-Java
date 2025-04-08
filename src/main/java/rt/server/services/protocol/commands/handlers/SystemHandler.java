@@ -22,21 +22,11 @@ public class SystemHandler implements CommandHandler {
 				   new Command(Commands.InitAuth).send(client);
 			   });
 			   return;
-		   };
+		   }
 		   if (command.equals(Commands.ResourcesLoaded.command))
 		   {
 			   client.dependencyUtils.mark(Integer.valueOf(args[0]));
-			   return;
-		   };
-		   if (command.equals(Commands.ChangeCountry.command))
-		   {
-			 if (client.user != null) {  
-				 client.user.country = args[0];
-				 Repositories.userRepository.updateUser(client.user);
-			 };
-			 new Command(Commands.UpdateCountry, args[0]).send(client);
-			 return;
-		   };
+		   }
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

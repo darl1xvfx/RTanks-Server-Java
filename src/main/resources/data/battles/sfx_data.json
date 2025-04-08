@@ -1,6 +1,36 @@
 {
 	"data": [
-	
+		{
+			"turret": "rocket_flying",
+			"animation": [
+				{
+					"attenuationBegin": 100,
+					"attenuationEnd": 300,
+					"color": 16571766,
+					"intensity": 0.5,
+					"time": 0
+				}
+			]
+		},
+		{
+			"turret": "rocket_explosion",
+			"animation": [
+				{
+					"attenuationBegin": 200,
+					"attenuationEnd": 400,
+					"color": 16571766,
+					"intensity": 0.3,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 1,
+					"attenuationEnd": 2,
+					"color": 16571766,
+					"intensity": 0,
+					"time": 300
+				}
+			]
+		},
 		{
 			"turret": "smoky_m0_muzzle",
 			"animation": [
@@ -674,7 +704,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m0_explosion",
 			"animation": [
@@ -694,7 +724,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m0_muzzle",
 			"animation": [
@@ -733,7 +763,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m1_explosion",
 			"animation": [
@@ -753,7 +783,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m1_muzzle",
 			"animation": [
@@ -792,7 +822,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m2_explosion",
 			"animation": [
@@ -812,7 +842,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m2_muzzle",
 			"animation": [
@@ -851,7 +881,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m3_explosion",
 			"animation": [
@@ -871,7 +901,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_m3_muzzle",
 			"animation": [
@@ -891,6 +921,177 @@
 				}
 			]
 		},{
+			"turret": "railgun_green_shot",
+			"animation": [
+				{
+					"attenuationBegin": 100,
+					"attenuationEnd": 500,
+					"color": 3863081,
+					"intensity": 0.5,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 1,
+					"attenuationEnd": 2,
+					"color": 3863081,
+					"intensity": 0,
+					"time": 1800
+				}
+			]
+		},
+		{
+			"turret": "railgun_green_explosion",
+			"animation": [
+				{
+					"attenuationBegin": 100,
+					"attenuationEnd": 600,
+					"color": 3863081,
+					"intensity": 0.7,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 1,
+					"attenuationEnd": 2,
+					"color": 3863081,
+					"intensity": 0,
+					"time": 300
+				}
+			]
+		},
+		{
+			"turret": "railgun_green_muzzle",
+			"animation": [
+				{
+					"attenuationBegin": 200,
+					"attenuationEnd": 200,
+					"color": 3863081,
+					"intensity": 0.7,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 200,
+					"attenuationEnd": 800,
+					"color": 3863081,
+					"intensity": 0.3,
+					"time": 600
+				}
+			]
+		},
+		{
+			"turret": "railgun_violet_shot",
+			"animation": [
+				{
+					"attenuationBegin": 100,
+					"attenuationEnd": 500,
+					"color": 14777855,
+					"intensity": 0.5,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 1,
+					"attenuationEnd": 2,
+					"color": 14777855,
+					"intensity": 0,
+					"time": 1800
+				}
+			]
+		},
+		{
+			"turret": "railgun_violet_explosion",
+			"animation": [
+				{
+					"attenuationBegin": 100,
+					"attenuationEnd": 600,
+					"color": 14777855,
+					"intensity": 0.7,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 1,
+					"attenuationEnd": 2,
+					"color": 14777855,
+					"intensity": 0,
+					"time": 300
+				}
+			]
+		},
+		{
+			"turret": "railgun_violet_muzzle",
+			"animation": [
+				{
+					"attenuationBegin": 200,
+					"attenuationEnd": 200,
+					"color": 14777855,
+					"intensity": 0.7,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 200,
+					"attenuationEnd": 800,
+					"color": 14777855,
+					"intensity": 0.3,
+					"time": 600
+				}
+			]
+		},
+		{
+			"turret": "railgun_black_shot",
+			"animation": [
+				{
+					"attenuationBegin": 100,
+					"attenuationEnd": 500,
+					"color": 14777855,
+					"intensity": 0.5,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 1,
+					"attenuationEnd": 2,
+					"color": 14777855,
+					"intensity": 0,
+					"time": 1800
+				}
+			]
+		},
+		{
+			"turret": "railgun_black_explosion",
+			"animation": [
+				{
+					"attenuationBegin": 100,
+					"attenuationEnd": 600,
+					"color": 14777855,
+					"intensity": 0.7,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 1,
+					"attenuationEnd": 2,
+					"color": 14777855,
+					"intensity": 0,
+					"time": 300
+				}
+			]
+		},
+		{
+			"turret": "railgun_black_muzzle",
+			"animation": [
+				{
+					"attenuationBegin": 200,
+					"attenuationEnd": 200,
+					"color": 14777855,
+					"intensity": 0.7,
+					"time": 0
+				},
+				{
+					"attenuationBegin": 200,
+					"attenuationEnd": 800,
+					"color": 14777855,
+					"intensity": 0.3,
+					"time": 600
+				}
+			]
+		},
+		{
 			"turret": "railgun_hell_m0_shot",
 			"animation": [
 				{
@@ -909,7 +1110,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m0_explosion",
 			"animation": [
@@ -929,7 +1130,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m0_muzzle",
 			"animation": [
@@ -968,7 +1169,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m1_explosion",
 			"animation": [
@@ -988,7 +1189,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m1_muzzle",
 			"animation": [
@@ -1027,7 +1228,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m2_explosion",
 			"animation": [
@@ -1047,7 +1248,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m2_muzzle",
 			"animation": [
@@ -1086,7 +1287,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m3_explosion",
 			"animation": [
@@ -1106,7 +1307,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_hell_m3_muzzle",
 			"animation": [
@@ -1145,7 +1346,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m0_explosion",
 			"animation": [
@@ -1165,7 +1366,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m0_muzzle",
 			"animation": [
@@ -1204,7 +1405,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m1_explosion",
 			"animation": [
@@ -1224,7 +1425,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m1_muzzle",
 			"animation": [
@@ -1263,7 +1464,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m2_explosion",
 			"animation": [
@@ -1283,7 +1484,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m2_muzzle",
 			"animation": [
@@ -1322,7 +1523,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m3_explosion",
 			"animation": [
@@ -1342,7 +1543,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_cs_m3_muzzle",
 			"animation": [
@@ -1381,7 +1582,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m0_explosion",
 			"animation": [
@@ -1401,7 +1602,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m0_muzzle",
 			"animation": [
@@ -1440,7 +1641,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m1_explosion",
 			"animation": [
@@ -1460,7 +1661,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m1_muzzle",
 			"animation": [
@@ -1499,7 +1700,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m2_explosion",
 			"animation": [
@@ -1519,7 +1720,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m2_muzzle",
 			"animation": [
@@ -1558,7 +1759,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m3_explosion",
 			"animation": [
@@ -1578,7 +1779,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "railgun_xt_m3_muzzle",
 			"animation": [
@@ -1617,7 +1818,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m0_explosion",
 			"animation": [
@@ -1637,7 +1838,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m0_muzzle",
 			"animation": [
@@ -1676,7 +1877,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m1_explosion",
 			"animation": [
@@ -1696,7 +1897,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m1_muzzle",
 			"animation": [
@@ -1735,7 +1936,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m2_explosion",
 			"animation": [
@@ -1755,7 +1956,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m2_muzzle",
 			"animation": [
@@ -1794,7 +1995,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m3_explosion",
 			"animation": [
@@ -1814,7 +2015,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "terminator_m3_muzzle",
 			"animation": [
@@ -1834,7 +2035,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "frezee_m0_muzzle",
 			"animation": [
@@ -2385,7 +2586,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m0_shot",
 			"animation": [
@@ -2398,7 +2599,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m0_explosion",
 			"animation": [
@@ -2437,7 +2638,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m1_shot",
 			"animation": [
@@ -2450,7 +2651,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m1_explosion",
 			"animation": [
@@ -2489,7 +2690,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m2_shot",
 			"animation": [
@@ -2502,7 +2703,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m2_explosion",
 			"animation": [
@@ -2541,7 +2742,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m3_shot",
 			"animation": [
@@ -2554,7 +2755,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "ricochet_m3_explosion",
 			"animation": [
@@ -2574,7 +2775,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "thunder_m0_muzzle",
 			"animation": [
@@ -2765,7 +2966,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "isida_m0_enemy_start",
 			"animation": [
@@ -3535,7 +3736,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "shaft_m0_explosion",
 			"animation": [
@@ -3574,7 +3775,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "shaft_m1_explosion",
 			"animation": [
@@ -3613,7 +3814,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "shaft_m2_explosion",
 			"animation": [
@@ -3652,7 +3853,7 @@
 				}
 			]
 		}
-		,
+	,
 		{
 			"turret": "shaft_m3_explosion",
 			"animation": [
@@ -3675,12 +3876,12 @@
 		{
 			"turret": "vulcan_m0_muzzle",
 			"animation": [{
-					"attenuationBegin": 1,
-					"attenuationEnd": 2,
-					"color": 16571766,
-					"intensity": 0,
-					"time": 0
-				},
+				"attenuationBegin": 1,
+				"attenuationEnd": 2,
+				"color": 16571766,
+				"intensity": 0,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 50,
 					"attenuationEnd": 1500,
@@ -3693,12 +3894,12 @@
 		{
 			"turret": "vulcan_m0_shot",
 			"animation": [{
-					"attenuationBegin": 50,
-					"attenuationEnd": 1500,
-					"color": 16571766,
-					"intensity": 0.3,
-					"time": 0
-				},
+				"attenuationBegin": 50,
+				"attenuationEnd": 1500,
+				"color": 16571766,
+				"intensity": 0.3,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 150,
 					"attenuationEnd": 1000,
@@ -3732,12 +3933,12 @@
 		{
 			"turret": "vulcan_m1_muzzle",
 			"animation": [{
-					"attenuationBegin": 1,
-					"attenuationEnd": 2,
-					"color": 16571766,
-					"intensity": 0,
-					"time": 0
-				},
+				"attenuationBegin": 1,
+				"attenuationEnd": 2,
+				"color": 16571766,
+				"intensity": 0,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 50,
 					"attenuationEnd": 1500,
@@ -3750,12 +3951,12 @@
 		{
 			"turret": "vulcan_m1_shot",
 			"animation": [{
-					"attenuationBegin": 50,
-					"attenuationEnd": 1500,
-					"color": 16571766,
-					"intensity": 0.3,
-					"time": 0
-				},
+				"attenuationBegin": 50,
+				"attenuationEnd": 1500,
+				"color": 16571766,
+				"intensity": 0.3,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 150,
 					"attenuationEnd": 1000,
@@ -3789,12 +3990,12 @@
 		{
 			"turret": "vulcan_m2_muzzle",
 			"animation": [{
-					"attenuationBegin": 1,
-					"attenuationEnd": 2,
-					"color": 16571766,
-					"intensity": 0,
-					"time": 0
-				},
+				"attenuationBegin": 1,
+				"attenuationEnd": 2,
+				"color": 16571766,
+				"intensity": 0,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 50,
 					"attenuationEnd": 1500,
@@ -3807,12 +4008,12 @@
 		{
 			"turret": "vulcan_m2_shot",
 			"animation": [{
-					"attenuationBegin": 50,
-					"attenuationEnd": 1500,
-					"color": 16571766,
-					"intensity": 0.3,
-					"time": 0
-				},
+				"attenuationBegin": 50,
+				"attenuationEnd": 1500,
+				"color": 16571766,
+				"intensity": 0.3,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 150,
 					"attenuationEnd": 1000,
@@ -3846,12 +4047,12 @@
 		{
 			"turret": "vulcan_m3_muzzle",
 			"animation": [{
-					"attenuationBegin": 1,
-					"attenuationEnd": 2,
-					"color": 16571766,
-					"intensity": 0,
-					"time": 0
-				},
+				"attenuationBegin": 1,
+				"attenuationEnd": 2,
+				"color": 16571766,
+				"intensity": 0,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 50,
 					"attenuationEnd": 1500,
@@ -3864,12 +4065,12 @@
 		{
 			"turret": "vulcan_m3_shot",
 			"animation": [{
-					"attenuationBegin": 50,
-					"attenuationEnd": 1500,
-					"color": 16571766,
-					"intensity": 0.3,
-					"time": 0
-				},
+				"attenuationBegin": 50,
+				"attenuationEnd": 1500,
+				"color": 16571766,
+				"intensity": 0.3,
+				"time": 0
+			},
 				{
 					"attenuationBegin": 150,
 					"attenuationEnd": 1000,
@@ -3925,6 +4126,6 @@
 					"time": 1200
 				}
 			]
-		}			
+		}
 	]
 }

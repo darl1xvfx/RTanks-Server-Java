@@ -8,6 +8,7 @@ import rt.server.battles.weapons.isida.IsisWeaponModel;
 import rt.server.battles.weapons.machinegun.MachineGunWeaponModel;
 import rt.server.battles.weapons.railgun.RailgunWeaponModel;
 import rt.server.battles.weapons.ricochet.RicochetWeaponModel;
+import rt.server.battles.weapons.rocketlauncher.RocketLauncherWeaponModel;
 import rt.server.battles.weapons.shaft.ShaftWeaponModel;
 import rt.server.battles.weapons.shotgun.ShotgunWeaponModel;
 import rt.server.battles.weapons.smoky.SmokyWeaponModel;
@@ -29,6 +30,7 @@ public class WeaponUtils {
     	weapons.put("twins", new TwinsWeaponModel());
     	weapons.put("frezee", new FreezeWeaponModel());
     	weapons.put("flamethrower", new FlamethrowerWeaponModel());
+		weapons.put("rocketlauncher", new RocketLauncherWeaponModel());
     }
     
     public static WeaponHandler getWeaponByName(String name) {

@@ -1,5 +1,6 @@
 package rt.server.battles;
 
+import org.json.simple.JSONArray;
 import rt.server.GameServer;
 import rt.server.battles.ctf.flags.FlagServer;
 import rt.server.battles.effects.InventoryModel;
@@ -36,6 +37,8 @@ public class BattleController {
     public boolean changedEquipment;
 	public FlagServer flag;
 
+	private static final String DEPENDENCIES_FILE = "battles/battle_dependencies.json";
+
 	public BattleController(BattleModel bm, ClientEntity c, String playerTT) {
 		this.battle = bm;
 		this.client = c;
@@ -59,32 +62,142 @@ public class BattleController {
 		BattleDeleter.cancelRemoving(bm);
 	}
 
-    public void init() {
-    	List<JSONObject> skyboxes = new ArrayList<JSONObject>();
-    	this.initDatas();
-    	skyboxes.add(ResourceUtils.parseResourceToDependency(false, false, (int)(long)this.battle.getBattleEntity().skybox.get("top"), 10, 1));
-    	skyboxes.add(ResourceUtils.parseResourceToDependency(false, false, (int)(long)this.battle.getBattleEntity().skybox.get("left"), 10, 1));
-    	skyboxes.add(ResourceUtils.parseResourceToDependency(false, false, (int)(long)this.battle.getBattleEntity().skybox.get("bottom"), 10, 1));
-    	skyboxes.add(ResourceUtils.parseResourceToDependency(false, false, (int)(long)this.battle.getBattleEntity().skybox.get("back"), 10, 1));
-    	skyboxes.add(ResourceUtils.parseResourceToDependency(false, false, (int)(long)this.battle.getBattleEntity().skybox.get("right"), 10, 1));
-    	skyboxes.add(ResourceUtils.parseResourceToDependency(false, false, (int)(long)this.battle.getBattleEntity().skybox.get("front"), 10, 1));
-    	this.client.dependencyUtils.loadDependencyFromString("[{\"lazy\":false,\"alpha\":false,\"id\":95549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":95559,\"type\":10,\"version\":9},{\"lazy\":false,\"alpha\":false,\"id\":95549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":95559,\"type\":10,\"version\":9},{\"lazy\":false,\"alpha\":false,\"id\":95549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":926352,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":388817,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":857360,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":553309,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"multiframe\":{\"numFrames\":9,\"fps\":25,\"width\":512,\"height\":476},\"id\":122455,\"type\":11,\"version\":1},{\"lazy\":false,\"id\":73466,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":63282,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":20098,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":2863,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":88303,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":32617,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":97468,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":82299,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":53912,\"type\":4,\"version\":4},{\"lazy\":false,\"alpha\":false,\"id\":96428,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":38338,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":660652,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":603946,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":215799,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":141042,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":586218,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":409645,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":916614,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":181945,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":855990,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":131023,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":965783,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":162026,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":721058,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":508233,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":593235,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":343201,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":583511,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":37183,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":605083,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":234984,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":945273,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":945273,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":201459,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":201449,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":558241,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":458307,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":458308,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":458309,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":451710,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451711,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451712,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451713,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451714,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451715,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":653372,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":653373,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":653374,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":653375,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":514190,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":514192,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":514191,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":230566,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":230565,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508550,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508551,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508553,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508552,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214552,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214553,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214554,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214555,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":579360,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":579359,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":579361,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962220,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962221,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962222,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962223,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962224,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962225,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962226,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791470,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791471,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791472,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791473,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791474,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791475,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791476,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791477,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":962340,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962341,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962342,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":64863,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":826482,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82431,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82432,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82433,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82434,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"multiframe\":{\"numFrames\":16,\"fps\":16,\"width\":128,\"height\":128},\"id\":262362,\"type\":11,\"version\":1},{\"lazy\":false,\"alpha\":true,\"multiframe\":{\"numFrames\":7,\"fps\":25,\"width\":128,\"height\":128},\"id\":262363,\"type\":11,\"version\":1},{\"lazy\":false,\"alpha\":true,\"multiframe\":{\"numFrames\":7,\"fps\":25,\"width\":128,\"height\":128},\"id\":262364,\"type\":11,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":272805,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":257970,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":261418,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":654177,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":7758,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":217990,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":322272,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":737975,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":714496,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":914536,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":235520,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":988711,\"type\":17,\"version\":1},{\"lazy\":false,\"id\":485066,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":587770,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":682388,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":515570,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":322199,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":882467,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":977449,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":168750,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":772423,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":471863,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":749059,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":977635,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":579403,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":587424,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":784193,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":761998,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":674975,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":280765,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":787349,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":191098,\"type\":8,\"version\":1}]", () -> this.client.dependencyUtils.loadDependencyFromString("[{\"lazy\":false,\"alpha\":false,\"id\":95549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":95549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":59837,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":95549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":926352,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":388817,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":857360,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":553309,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"multiframe\":{\"numFrames\":9,\"fps\":25,\"width\":512,\"height\":476},\"id\":122455,\"type\":11,\"version\":1},{\"lazy\":false,\"id\":73466,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":63282,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":20098,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":2863,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":88303,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":32617,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":97468,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":82299,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":53912,\"type\":4,\"version\":4},{\"lazy\":false,\"alpha\":false,\"id\":96428,\"type\":10,\"version\":10},{\"lazy\":false,\"id\":38338,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":660652,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":603946,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":215799,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":141042,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":586218,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":409645,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":916614,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":181945,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":855990,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":131023,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":965783,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":162026,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":721058,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":508233,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":593235,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":343201,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":583511,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":37183,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":605083,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":234984,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":945273,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":945273,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":201459,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":201449,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":558241,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":458307,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":458308,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":458309,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":451710,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451711,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451712,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451713,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451714,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":451715,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":653372,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":653373,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":653374,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":653375,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":514190,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":514192,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":514191,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":230566,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":230565,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508549,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508550,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508551,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508553,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":508552,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214552,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214553,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214554,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":214555,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":579360,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":579359,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":579361,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962220,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962221,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962222,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962223,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962224,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962225,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962226,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791470,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791471,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791472,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791473,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791474,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791475,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791476,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":791477,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":962340,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962341,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":962342,\"type\":4,\"version\":1},{\"lazy\":false,\"alpha\":false,\"id\":64863,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":826482,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82431,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82432,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82433,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":82434,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"multiframe\":{\"numFrames\":16,\"fps\":16,\"width\":128,\"height\":128},\"id\":262362,\"type\":11,\"version\":1},{\"lazy\":false,\"alpha\":true,\"multiframe\":{\"numFrames\":7,\"fps\":25,\"width\":128,\"height\":128},\"id\":262363,\"type\":11,\"version\":1},{\"lazy\":false,\"alpha\":true,\"multiframe\":{\"numFrames\":7,\"fps\":25,\"width\":128,\"height\":128},\"id\":262364,\"type\":11,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":5680,\"type\":10,\"version\":1},{\"lazy\":false,\"alpha\":true,\"id\":722218,\"type\":10,\"version\":1},{\"lazy\":false,\"id\":337668,\"type\":17,\"version\":1},{\"lazy\":false,\"id\":403950,\"type\":17,\"version\":1},{\"lazy\":false,\"id\":158214,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":177070,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":289695,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":437905,\"type\":4,\"version\":1},{\"lazy\":false,\"id\":20888,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":627579,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":812273,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":313706,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":998304,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":62968,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":783489,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":67882,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":495668,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":890438,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":514476,\"type\":8,\"version\":1},{\"lazy\":false,\"id\":940135,\"type\":8,\"version\":1}]", () -> this.client.dependencyUtils.loadDependencyFromString(skyboxes.toString(), () -> {
-            this.client.dependencyUtils.loadDependencyFromString("[{\"lazy\":false,\"id\":3814,\"type\":17,\"version\":1},{\"lazy\":false,\"id\":356834,\"type\":17,\"version\":1},{\"lazy\":false,\"id\":444997,\"type\":17,\"version\":1},{\"lazy\":false,\"id\":554722,\"type\":17,\"version\":1},{\"lazy\":false,\"id\":378527,\"type\":7,\"version\":3},{\"lazy\":false,\"id\":894795,\"type\":7,\"version\":1}]", () -> {
-                this.client.dependencyUtils.loadDependencyFromString(MapResourceUtils.getResources(this.battle.map).toString(), () -> {
-                    initBattleModel();
-                });
-            });
-        })));
-    }
+	public void init() {
+		Logger.log(Logger.INFO, "Starting battle initialization");
+		try {
+			this.initDatas();
+			List<JSONObject> skyboxes = initializeSkyboxes();
+			loadDependenciesFromJson(skyboxes);
+		} catch (Exception e) {
+			Logger.log(Logger.ERROR, "Battle initialization failed: " + e.getMessage());
+			throw new RuntimeException("Failed to initialize battle", e);
+		}
+	}
 
-    private void initDatas() {
-    	new Command(Commands.InitShotsData, Resource.fileToString("battles/shots_data.json")).send(client);
-    	new Command(Commands.InitBcshData, Resource.fileToString("battles/bcsh_data.json")).send(client);
-    	new Command(Commands.InitSfxData, Resource.fileToString("battles/sfx_data.json")).send(client);
-    }
+	private List<JSONObject> initializeSkyboxes() {
+		List<JSONObject> skyboxes = new ArrayList<>();
+		String[] skyboxSides = {"top", "left", "bottom", "back", "right", "front"};
+
+		Logger.log(Logger.INFO, "Initializing skyboxes");
+		for (String side : skyboxSides) {
+			try {
+				int id = (int)(long)battle.getBattleEntity().skybox.get(side);
+				JSONObject dependency = ResourceUtils.parseResourceToDependency(false, false, id, 10, 1);
+				skyboxes.add(dependency);
+				Logger.log(Logger.DEBUG, "Added skybox " + side + " with id: " + id);
+			} catch (Exception e) {
+				Logger.log(Logger.ERROR, "Failed to initialize skybox " + side + ": " + e.getMessage());
+				throw new RuntimeException("Skybox initialization failed", e);
+			}
+		}
+		return skyboxes;
+	}
+
+	private void loadDependenciesFromJson(List<JSONObject> skyboxes) {
+		try {
+			Logger.log(Logger.DEBUG, "Attempting to load dependencies from file: " + DEPENDENCIES_FILE);
+			String jsonContent = Resource.fileToString(DEPENDENCIES_FILE);
+			if (jsonContent == null || jsonContent.isEmpty()) {
+				Logger.log(Logger.ERROR, "Dependencies file is empty or not found: " + DEPENDENCIES_FILE);
+				throw new IllegalStateException("Dependencies file is empty or not found");
+			}
+			Logger.log(Logger.DEBUG, "Dependencies file content loaded successfully");
+
+			JSONObject dependencies = (JSONObject) new JSONParser().parse(jsonContent);
+			Logger.log(Logger.DEBUG, "Parsed JSON: " + dependencies.toJSONString());
+
+			JSONArray mainDeps = (JSONArray) dependencies.get("main_dependencies");
+			if (mainDeps == null || mainDeps.isEmpty()) {
+				Logger.log(Logger.ERROR, "main_dependencies is null or empty");
+				throw new IllegalStateException("main_dependencies not found or empty");
+			}
+			Logger.log(Logger.DEBUG, "Main dependencies: " + mainDeps.toJSONString());
+
+			JSONArray additionalDeps = (JSONArray) dependencies.get("additional_dependencies");
+			JSONArray finalDeps = (JSONArray) dependencies.get("final_dependencies");
+
+			Logger.log(Logger.INFO, "Loading main dependencies");
+			client.dependencyUtils.loadDependencyFromString(
+					mainDeps.toJSONString(),
+					() -> {
+						Logger.log(Logger.INFO, "Main dependencies loaded successfully");
+						loadAdditionalDependencies(additionalDeps, skyboxes);
+					}
+			);
+			Logger.log(Logger.DEBUG, "loadDependencyFromString called for main dependencies");
+		} catch (Exception e) {
+			Logger.log(Logger.ERROR, "Failed to load dependencies from JSON: " + e.getMessage());
+			throw new RuntimeException("Dependencies loading failed", e);
+		}
+	}
+
+	private void loadAdditionalDependencies(JSONArray additionalDeps, List<JSONObject> skyboxes) {
+		Logger.log(Logger.INFO, "Loading additional dependencies");
+		try {
+			client.dependencyUtils.loadDependencyFromString(
+					additionalDeps.toJSONString(),
+					() -> loadSkyboxDependencies(skyboxes)
+			);
+		} catch (Exception e) {
+			Logger.log(Logger.ERROR, "Failed to load additional dependencies: " + e.getMessage());
+			throw new RuntimeException("Additional dependencies loading failed", e);
+		}
+	}
+
+	private void loadSkyboxDependencies(List<JSONObject> skyboxes) {
+		Logger.log(Logger.INFO, "Loading skybox dependencies");
+		try {
+			client.dependencyUtils.loadDependencyFromString(
+					JSONArray.toJSONString(skyboxes),
+					this::loadFinalDependencies
+			);
+		} catch (Exception e) {
+			Logger.log(Logger.ERROR, "Failed to load skybox dependencies: " + e.getMessage());
+			throw new RuntimeException("Skybox dependencies loading failed", e);
+		}
+	}
+
+	private void loadFinalDependencies() {
+		try {
+			String jsonContent = Resource.fileToString(DEPENDENCIES_FILE);
+			JSONObject dependencies = (JSONObject) new JSONParser().parse(jsonContent);
+			JSONArray finalDeps = (JSONArray) dependencies.get("final_dependencies");
+
+			Logger.log(Logger.INFO, "Loading final dependencies");
+			client.dependencyUtils.loadDependencyFromString(
+					finalDeps.toJSONString(),
+					this::loadMapResources
+			);
+		} catch (Exception e) {
+			Logger.log(Logger.ERROR, "Failed to load final dependencies: " + e.getMessage());
+			throw new RuntimeException("Final dependencies loading failed", e);
+		}
+	}
+
+	private void loadMapResources() {
+		Logger.log(Logger.INFO, "Loading map resources");
+		try {
+			client.dependencyUtils.loadDependencyFromString(
+					MapResourceUtils.getResources(battle.map).toString(),
+					this::initBattleModel
+			);
+		} catch (Exception e) {
+			Logger.log(Logger.ERROR, "Failed to load map resources: " + e.getMessage());
+			throw new RuntimeException("Map resources loading failed", e);
+		}
+	}
+
+	private void initDatas() {
+		Logger.log(Logger.INFO, "Initializing battle data");
+		new Command(Commands.InitShotsData, Resource.fileToString("battles/shots_data.json")).send(client);
+		new Command(Commands.InitBcshData, Resource.fileToString("battles/bcsh_data.json")).send(client);
+		new Command(Commands.InitSfxData, Resource.fileToString("battles/sfx_data.json")).send(client);
+	}
 
 	public void initBattleModel() {
-		new Command(Commands.InitBattleModel, JSON.parseInitBattleModel(this.battle, false)).send(client);
+		Logger.log(Logger.INFO, "Initializing battle model");
+		new Command(Commands.InitBattleModel, JSON.parseInitBattleModel(battle, false)).send(client);
+		Logger.log(Logger.INFO, "Battle model initialized successfully");
 	}
 
 	public void createTank() {

@@ -1,0 +1,72 @@
+{
+  "acceleration": 9.4706,
+  "battleId": "2aaaaab144eeb483",
+  "colormap_id": "lumberjack_m0",
+  "colormap_resource": 576366,
+  "damping": 600.0,
+  "deceleration": 3.2,
+  "health": 10000,
+  "hull_id": "wasp_m1",
+  "hull_resource": 329127,
+  "impact_force": 1.76,
+  "incration": 26,
+  "kickback": 0.69,
+  "mass": 1265.0,
+  "maxSpeed": 10.53,
+  "models": [
+    {
+      "colorBlue": "30719",
+      "colorRed": "16711684",
+      "high": 1691794381,
+      "locallyVisible": true,
+      "low": -1794202080,
+      "name": "laser",
+      "showTime": 0
+    },
+    {
+      "high": 1659531301,
+      "low": -819911951,
+      "name": "resistances",
+      "resistances": [
+        {
+          "percent": "25",
+          "property": "ricochet_resistance"
+        },
+        {
+          "percent": "25",
+          "property": "freeze_resistance"
+        },
+        {
+          "percent": "25",
+          "property": "rail_resistance"
+        }
+      ]
+    }
+  ],
+  "nickname": "Princess",
+  "notificationOfEnter": "true",
+  "position": "4250.0@-3750.0@0.0@0.0",
+  "rank": 16,
+  "reverseAcceleration": 13.5882,
+  "sfxData": "{\"rightShotSounds\":767236,\"explosionMarkTexture\":546456,\"rocketFlameTexture\":546457,\"aimingCompleteSound\":767231,\"rocketSmokeTexture\":546458,\"leftHitSounds\":767233,\"rightHitSounds\":767235,\"leftShotSounds\":767234,\"rocketFlightSound\":767237,\"targetLostSound\":767238,\"explosionTexture\":546460,\"aimingSound\":767232}",
+  "sideAcceleration": 17.3824,
+  "sounds": {
+    "engineIdleSoundId": 73466,
+    "engineMovingSoundId": 63282,
+    "engineStartMovingSoundId": 20098,
+    "turretRotationSoundId": 2863
+  },
+  "state": "active",
+  "state_null": true,
+  "tank_id": "Princess",
+  "team_type": "RED",
+  "turnAcceleration": 2.36,
+  "turnDeceleration": 1.5,
+  "turnMaxSpeed": 1.88,
+  "turnReverseAcceleration": 5.26,
+  "turret_id": "rocketlauncher_m1",
+  "turret_resource": 825938,
+  "turret_rotation_accel": 1.55,
+  "turret_turn_speed": 1.55,
+  "weaponModels": []
+}

@@ -87,16 +87,13 @@ public class LobbyHandler implements CommandHandler {
 		};
 		if (command.equals(Commands.GetShowBattleInfo.command)) 
 		{
-            this.showBattleInfo(args[0], client);
+			new Command(Commands.GenerateKeyEmail, false).send(client);
+			this.showBattleInfo(args[0], client);
             return;
 		};
 		if (command.equals(Commands.GetShop.command))
 		{
-			if (client.user.country != null) {
-				new Command(Commands.OpenShop, Resource.fileToString("shop.json")).send(client);
-			} else {
-				new Command(Commands.ShowSelectCountryAlert).send(client);
-			}
+			new Command(Commands.OpenShop, Resource.fileToString("shop.json")).send(client);
 			return;
 		};
 		if (command.equals(Commands.EnterBattle.command))

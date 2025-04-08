@@ -1,38 +1,38 @@
 {
 	"bcsh": [{
-			"id": "twins_m0",
-			"params": [{
-					"brightness": 0,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 0,
-					"key": "flash"
-				},
-				{
-					"brightness": 0,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 0,
-					"key": "shot"
-				},
-				{
-					"brightness": 0,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 0,
-					"key": "expl"
-				}
-			]
+		"id": "twins_m0",
+		"params": [{
+			"brightness": 0,
+			"contrast": 0,
+			"saturation": 0,
+			"hue": 0,
+			"key": "flash"
 		},
+			{
+				"brightness": 0,
+				"contrast": 0,
+				"saturation": 0,
+				"hue": 0,
+				"key": "shot"
+			},
+			{
+				"brightness": 0,
+				"contrast": 0,
+				"saturation": 0,
+				"hue": 0,
+				"key": "expl"
+			}
+		]
+	},
 		{
 			"id": "twins_m1",
 			"params": [{
-					"brightness": 0,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 46.19,
-					"key": "flash"
-				},
+				"brightness": 0,
+				"contrast": 0,
+				"saturation": 0,
+				"hue": 46.19,
+				"key": "flash"
+			},
 				{
 					"brightness": 0,
 					"contrast": 0,
@@ -52,12 +52,12 @@
 		{
 			"id": "twins_m2",
 			"params": [{
-					"brightness": 30.465,
-					"contrast": 2.655,
-					"saturation": -17.699,
-					"hue": 73.27,
-					"key": "flash"
-				},
+				"brightness": 30.465,
+				"contrast": 2.655,
+				"saturation": -17.699,
+				"hue": 73.27,
+				"key": "flash"
+			},
 				{
 					"brightness": 30.465,
 					"contrast": 2.655,
@@ -77,12 +77,12 @@
 		{
 			"id": "twins_m3",
 			"params": [{
-					"brightness": 10.155,
-					"contrast": 1.77,
-					"saturation": -17.699,
-					"hue": 73.27,
-					"key": "flash"
-				},
+				"brightness": 10.155,
+				"contrast": 1.77,
+				"saturation": -17.699,
+				"hue": 73.27,
+				"key": "flash"
+			},
 				{
 					"brightness": 10.155,
 					"contrast": 1.77,
@@ -102,12 +102,12 @@
 		{
 			"id": "ricochet_m0",
 			"params": [{
-					"brightness": 14.668,
-					"contrast": 0,
-					"saturation": -8.85,
-					"hue": 6.37,
-					"key": "shot"
-				},
+				"brightness": 14.668,
+				"contrast": 0,
+				"saturation": -8.85,
+				"hue": 6.37,
+				"key": "shot"
+			},
 				{
 					"brightness": 14.668,
 					"contrast": 0,
@@ -127,12 +127,12 @@
 		{
 			"id": "ricochet_m1",
 			"params": [{
-					"brightness": 1.128,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 345.66,
-					"key": "shot"
-				},
+				"brightness": 1.128,
+				"contrast": 0,
+				"saturation": 0,
+				"hue": 345.66,
+				"key": "shot"
+			},
 				{
 					"brightness": 1.128,
 					"contrast": 0,
@@ -152,12 +152,12 @@
 		{
 			"id": "ricochet_m2",
 			"params": [{
-					"brightness": 1.128,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 1.59,
-					"key": "shot"
-				},
+				"brightness": 1.128,
+				"contrast": 0,
+				"saturation": 0,
+				"hue": 1.59,
+				"key": "shot"
+			},
 				{
 					"brightness": 1.128,
 					"contrast": 0,
@@ -177,12 +177,12 @@
 		{
 			"id": "ricochet_m3",
 			"params": [{
-					"brightness": 1.128,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 353.63,
-					"key": "shot"
-				},
+				"brightness": 1.128,
+				"contrast": 0,
+				"saturation": 0,
+				"hue": 353.63,
+				"key": "shot"
+			},
 				{
 					"brightness": 1.128,
 					"contrast": 0,
@@ -202,12 +202,12 @@
 		{
 			"id": "railgun_m0",
 			"params": [{
-					"key": "trail",
-					"brightness": 0,
-					"contrast": 0,
-					"saturation": 0,
-					"hue": 0
-				},
+				"key": "trail",
+				"brightness": 0,
+				"contrast": 0,
+				"saturation": 0,
+				"hue": 0
+			},
 				{
 					"key": "charge",
 					"brightness": 0,
@@ -220,12 +220,12 @@
 		{
 			"id": "railgun_m1",
 			"params": [{
-					"brightness": 10.155,
-					"contrast": -2.655,
-					"saturation": 61.947,
-					"hue": 344.07,
-					"key": "trail"
-				},
+				"brightness": 10.155,
+				"contrast": -2.655,
+				"saturation": 61.947,
+				"hue": 344.07,
+				"key": "trail"
+			},
 				{
 					"brightness": 10.155,
 					"contrast": -2.655,
@@ -238,12 +238,12 @@
 		{
 			"id": "railgun_m2",
 			"params": [{
-					"brightness": 7.898,
-					"contrast": -2.655,
-					"saturation": 35.398,
-					"hue": 78.05,
-					"key": "trail"
-				},
+				"brightness": 7.898,
+				"contrast": -2.655,
+				"saturation": 35.398,
+				"hue": 78.05,
+				"key": "trail"
+			},
 				{
 					"brightness": 7.898,
 					"contrast": -2.655,
@@ -256,12 +256,12 @@
 		{
 			"id": "railgun_m3",
 			"params": [{
-					"brightness": 9.027,
-					"contrast": -3.54,
-					"saturation": 44.248,
-					"hue": 208.67,
-					"key": "trail"
-				},
+				"brightness": 9.027,
+				"contrast": -3.54,
+				"saturation": 44.248,
+				"hue": 208.67,
+				"key": "trail"
+			},
 				{
 					"brightness": 9.027,
 					"contrast": -3.54,
@@ -272,14 +272,68 @@
 			]
 		},
 		{
+			"id": "railgun_green",
+			"params": [{
+				"brightness": 9.0,
+				"contrast": -3.54,
+				"saturation": 47.0,
+				"hue": -83.0,
+				"key": "trail"
+			},
+				{
+					"brightness": 9.0,
+					"contrast": -3.54,
+					"saturation": 47.0,
+					"hue": -83.0,
+					"key": "charge"
+				}
+			]
+		},
+		{
+			"id": "railgun_violet",
+			"params": [{
+				"brightness": -59.0,
+				"contrast": -3.54,
+				"saturation": 47.0,
+				"hue": 70.0,
+				"key": "trail"
+			},
+				{
+					"brightness": -59.0,
+					"contrast": -3.54,
+					"saturation": 47.0,
+					"hue": 70.0,
+					"key": "charge"
+				}
+			]
+		},
+		{
+			"id": "railgun_black",
+			"params": [{
+				"brightness": -59.0,
+				"contrast": -3.54,
+				"saturation": 47.0,
+				"hue": 70.0,
+				"key": "trail"
+			},
+				{
+					"brightness": -59.0,
+					"contrast": -3.54,
+					"saturation": 47.0,
+					"hue": 70.0,
+					"key": "charge"
+				}
+			]
+		},
+		{
 			"id": "isida_m0",
 			"params": [{
-					"brightness": 0,
-					"contrast": -1.77,
-					"saturation": 0,
-					"hue": 0,
-					"key": "hss"
-				},
+				"brightness": 0,
+				"contrast": -1.77,
+				"saturation": 0,
+				"hue": 0,
+				"key": "hss"
+			},
 				{
 					"brightness": 0,
 					"contrast": -1.77,
@@ -306,12 +360,12 @@
 		{
 			"id": "isida_m1",
 			"params": [{
-					"brightness": 19.181,
-					"contrast": -1.77,
-					"saturation": 8.85,
-					"hue": 316.99,
-					"key": "hss"
-				},
+				"brightness": 19.181,
+				"contrast": -1.77,
+				"saturation": 8.85,
+				"hue": 316.99,
+				"key": "hss"
+			},
 				{
 					"brightness": 19.181,
 					"contrast": -1.77,
@@ -338,12 +392,12 @@
 		{
 			"id": "isida_m2",
 			"params": [{
-					"brightness": 4.513,
-					"contrast": -1.77,
-					"saturation": 8.85,
-					"hue": 299.47,
-					"key": "hss"
-				},
+				"brightness": 4.513,
+				"contrast": -1.77,
+				"saturation": 8.85,
+				"hue": 299.47,
+				"key": "hss"
+			},
 				{
 					"brightness": 4.513,
 					"contrast": -1.77,
@@ -370,12 +424,12 @@
 		{
 			"id": "isida_m3",
 			"params": [{
-					"brightness": 2.257,
-					"contrast": 1.77,
-					"saturation": 26.549,
-					"hue": 267.61,
-					"key": "hss"
-				},
+				"brightness": 2.257,
+				"contrast": 1.77,
+				"saturation": 26.549,
+				"hue": 267.61,
+				"key": "hss"
+			},
 				{
 					"brightness": 2.257,
 					"contrast": 1.77,
@@ -443,16 +497,16 @@
 	"colorTransform": [{
 		"id": "flamethrower_m0",
 		"params": [{
-				"redMultiplier": 1,
-				"greenMultiplier": 1,
-				"blueMultiplier": 1,
-				"alphaMultiplier": 1,
-				"redOffset": 100,
-				"greenOffset": 150,
-				"blueOffset": 100,
-				"alphaOffset": 0,
-				"t": 0
-			},
+			"redMultiplier": 1,
+			"greenMultiplier": 1,
+			"blueMultiplier": 1,
+			"alphaMultiplier": 1,
+			"redOffset": 100,
+			"greenOffset": 150,
+			"blueOffset": 100,
+			"alphaOffset": 0,
+			"t": 0
+		},
 			{
 				"redMultiplier": 1,
 				"greenMultiplier": 1,
@@ -512,16 +566,16 @@
 	}, {
 		"id": "flamethrower_m1",
 		"params": [{
-				"redMultiplier": 1,
-				"greenMultiplier": 1,
-				"blueMultiplier": 1,
-				"alphaMultiplier": 1,
-				"redOffset": 100,
-				"greenOffset": 150,
-				"blueOffset": 100,
-				"alphaOffset": 0,
-				"t": 0
-			},
+			"redMultiplier": 1,
+			"greenMultiplier": 1,
+			"blueMultiplier": 1,
+			"alphaMultiplier": 1,
+			"redOffset": 100,
+			"greenOffset": 150,
+			"blueOffset": 100,
+			"alphaOffset": 0,
+			"t": 0
+		},
 			{
 				"redMultiplier": 1,
 				"greenMultiplier": 1,
@@ -581,16 +635,16 @@
 	}, {
 		"id": "flamethrower_m2",
 		"params": [{
-				"redMultiplier": 1,
-				"greenMultiplier": 1,
-				"blueMultiplier": 1,
-				"alphaMultiplier": 1,
-				"redOffset": 100,
-				"greenOffset": 150,
-				"blueOffset": 100,
-				"alphaOffset": 0,
-				"t": 0
-			},
+			"redMultiplier": 1,
+			"greenMultiplier": 1,
+			"blueMultiplier": 1,
+			"alphaMultiplier": 1,
+			"redOffset": 100,
+			"greenOffset": 150,
+			"blueOffset": 100,
+			"alphaOffset": 0,
+			"t": 0
+		},
 			{
 				"redMultiplier": 1,
 				"greenMultiplier": 1,
@@ -650,16 +704,16 @@
 	}, {
 		"id": "flamethrower_m3",
 		"params": [{
-				"redMultiplier": 1,
-				"greenMultiplier": 1,
-				"blueMultiplier": 1,
-				"alphaMultiplier": 1,
-				"redOffset": 100,
-				"greenOffset": 150,
-				"blueOffset": 100,
-				"alphaOffset": 0,
-				"t": 0
-			},
+			"redMultiplier": 1,
+			"greenMultiplier": 1,
+			"blueMultiplier": 1,
+			"alphaMultiplier": 1,
+			"redOffset": 100,
+			"greenOffset": 150,
+			"blueOffset": 100,
+			"alphaOffset": 0,
+			"t": 0
+		},
 			{
 				"redMultiplier": 1,
 				"greenMultiplier": 1,

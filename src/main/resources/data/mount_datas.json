@@ -32,6 +32,18 @@
 	"shaft_m0": {
 		"object3ds": 792605
 	},
+	"rocketlauncher_m0": {
+		"object3ds": 825938
+	},
+	"rocketlauncher_m1": {
+		"object3ds": 825938
+	},
+	"rocketlauncher_m2": {
+		"object3ds": 825938
+	},
+	"rocketlauncher_m3": {
+		"object3ds": 825938
+	},
 	"smoky_m1": {
         "object3ds": 825936
     },

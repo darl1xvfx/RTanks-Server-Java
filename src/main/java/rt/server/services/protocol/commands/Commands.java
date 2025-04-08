@@ -33,6 +33,8 @@ public enum Commands {
 	GetShowBattleInfo("lobby", "get_show_battle_info", "server"),
     ShowBattleInfo("lobby", "show_battle_info", "client"),
 	GetGarageData("lobby", "get_garage_data", "server"),
+	BindEmail("lobby", "bind_email", "client"),
+	GenerateKeyEmail("lobby", "generate_key_email", "server"),
 	ChangePassword("lobby", "change_password", "client"),
 	StartPremiumAccount("lobby", "start_premium_account", "client"),
 	UpdatePremiumStatus("lobby", "update_premium_status", "client"),
