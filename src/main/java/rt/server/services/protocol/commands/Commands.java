@@ -87,7 +87,10 @@ public enum Commands {
 	LocalUserKilled("battle", "local_user_killed", "client"),
 	KillTank("battle", "kill_tank", "client"),
 	Suicide("battle", "suicide", "server"),
+
 	Fire("battle", "fire", ""),
+	AimAtTank("battle", "aim_at_tank", ""),
+
 	DamageTank("battle", "damage_tank", "client"),
 	UpdateDirection("battle", "update_direction", "client"),
 	HideLaser("battle", "hide_laser", "client"),

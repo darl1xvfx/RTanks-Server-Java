@@ -300,7 +300,6 @@ public class BattleModel {
     }
 
 	public void onFire(BattleController owner, String data) {
-		this.send2Battle(new Command(Commands.Fire, owner.client.user.username, data));
 		owner.tank.weapon.onFire(owner, data);
 	}
 

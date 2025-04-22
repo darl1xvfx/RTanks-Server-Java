@@ -321,7 +321,7 @@ public class JSON {
 			JSONObject weaponJson = parseModel(weaponModel.high, weaponModel.low, weaponModel.name);
 
 			if (weaponModel.name.equals("laser")) {
-				weaponJson.put("showTime", 500);
+				weaponJson.put("showTime", 200);
 				weaponJson.put("colorRed", "16711684");
 				weaponJson.put("colorBlue", "30719");
 				weaponJson.put("locallyVisible", true);

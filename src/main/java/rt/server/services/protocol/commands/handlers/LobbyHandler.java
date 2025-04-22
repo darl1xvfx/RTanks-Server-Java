@@ -87,7 +87,6 @@ public class LobbyHandler implements CommandHandler {
 		};
 		if (command.equals(Commands.GetShowBattleInfo.command)) 
 		{
-			new Command(Commands.GenerateKeyEmail, false).send(client);
 			this.showBattleInfo(args[0], client);
             return;
 		};

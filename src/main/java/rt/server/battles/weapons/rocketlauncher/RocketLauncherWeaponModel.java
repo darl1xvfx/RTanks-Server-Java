@@ -13,6 +13,7 @@ public class RocketLauncherWeaponModel implements WeaponHandler {
 
 	@Override
 	public void onFire(BattleController battle, String data) {
+		battle.battle.send2Battle(new Command(Commands.Fire, battle.client.user.id, data));
 	}
 
 	@Override

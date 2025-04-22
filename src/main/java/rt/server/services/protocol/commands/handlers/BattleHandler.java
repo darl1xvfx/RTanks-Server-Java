@@ -7,6 +7,7 @@ import rt.server.battles.BattleModel;
 import rt.server.battles.weapons.WeaponHandler;
 import rt.server.battles.weapons.laser.Laser;
 import rt.server.client.ClientEntity;
+import rt.server.logger.Logger;
 import rt.server.math.Vector3;
 import rt.server.services.protocol.commands.Command;
 import rt.server.services.protocol.commands.CommandHandler;
@@ -101,16 +102,20 @@ public class BattleHandler implements CommandHandler {
 		    client.controller.battle.killTank(client.controller, null, client.user.equipment.getTurretName());
 		    return;
 		};
-		if (command.equals(Commands.Fire.command))
-		{
+		if (command.equals(Commands.SimpleShoot.command)) {
+			return;
+		}
+		if (command.equals(Commands.AimAtTank.command)) {
+			new Command(Commands.AimAtTank).send(client);
+            return;
+		}
+		if (command.equals(Commands.Fire.command)) {
 			client.controller.battle.onFire(client.controller, args[0]);
 			return;
-		};
+		}
+
 		if (command.equals(Commands.StartFire.command)) {
 			WeaponHandler weapon = client.controller.tank.weapon;
-			if (weapon.getModel() instanceof Laser) {
-				System.out.println("StartFire triggered with Laser model for tank: " + client.controller.tank);
-			}
 			weapon.startFire(client.controller, args[0]);
 			return;
 		}
