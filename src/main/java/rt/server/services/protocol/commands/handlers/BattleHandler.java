@@ -101,9 +101,6 @@ public class BattleHandler implements CommandHandler {
 		{
 		    client.controller.battle.killTank(client.controller, null, client.user.equipment.getTurretName());
 		    return;
-		};
-		if (command.equals(Commands.SimpleShoot.command)) {
-			return;
 		}
 		if (command.equals(Commands.AimAtTank.command)) {
 			new Command(Commands.AimAtTank).send(client);
